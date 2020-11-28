@@ -3,4 +3,4 @@
 
 ###### The application with backend feature enabled looks like this
 
-![](car_gif.gif)
+![](car.gif.gif)
