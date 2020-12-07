@@ -36,7 +36,8 @@ function onClickedEstimatePrice(){
     //variable for Estimated price.
     var estprice = document.getElementById("uiEstimatedPrice");
      
-    var url = "http://127.0.0.1:5000/predict_car_price";
+   // var url = "http://127.0.0.1:5000/predict_car_price";
+    var url = "https://used-car-price-predcition.herokuapp.com/predict_car_price";
 
    // var url = "/api/predict_car_price"; // For online deployement api call.
 
@@ -62,7 +63,8 @@ function onClickedEstimatePrice(){
 // Function to load Json datas into the Location and Fuel_Type Column
 function onPageload(){
     console.log("document loaded");
-    var url = "http://127.0.0.1:5000/get_saved_api";
+    //var url = "http://127.0.0.1:5000/get_saved_api";
+    var url = "https://used-car-price-predcition.herokuapp.com/get_saved_api"; 
     // var url = "/api/get_saved_api"; //
     $.get(url,function(data, status){
         console.log("got saved api call files responses");
